@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+#main-background {
+  background-image: url('back.jpg'); /* ganti dengan gambar kamu */
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Frame lagu di tengah layar */
+
+.frame {
+  width: 80vw;
+  max-width: 400px;
+  aspect-ratio: 3 / 4;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 6px solid transparent; /* ← jangan default warna */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(5px);
+}
+
+/* Gambar cover lagu */
+.cover {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Kontainer tombol navigasi */
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Gambar tombol */
+.nav-btn,
+.play-btn-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  cursor: pointer;
+}
